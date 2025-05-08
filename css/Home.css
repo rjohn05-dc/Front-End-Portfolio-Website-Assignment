@@ -1,12 +1,8 @@
- body{
-        background-image:url("./images/portfolio.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+
 
 h1{
     text-align: center;
-    color: #333;
+    color:ghostwhite;
     margin-bottom: 30px;
 }
 
@@ -14,10 +10,10 @@ nav{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid white;
 }
 nav a{
     margin: 0 15px;
     text-decoration: none;
-    color: #007BFF;
+    color:white;
 }
