@@ -2,7 +2,7 @@
 
 h1{
     text-align: center;
-    color:ghostwhite;
+    color:black;
     margin-bottom: 30px;
 }
 
@@ -10,10 +10,15 @@ nav{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 nav a{
     margin: 0 15px;
     text-decoration: none;
-    color:white;
+    color:black;
+}
+
+p{
+    text-align:center;
+    font-size: 20px;
 }
