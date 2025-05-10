@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+
+}nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color:black;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.project{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}

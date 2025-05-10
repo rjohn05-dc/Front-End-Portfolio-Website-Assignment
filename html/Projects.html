@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/Projects.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
+<style>
+    body {
+      background-image: url('/images/samuraiportfolio.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
 <body>
+    <h1>Projects</h1>
+
+    <nav>
+        <a href="/html/home.html">Home</a>
+        <a href="/html/AboutMe.html">About Me</a>
+        <a href="/html/Projects.html">Projects</a>
+        <a href="/html/ContactMe.html">Contact Me</a>
+
+    </nav>
+
+    <div class="projects">
+        <div class="project">
+            <h2>Interactive Image Gallery</h2>
+            <img src="../images/Avatar.png" alt="Avatar Image Gallery" width="300" height="200">
+            <p>This project is an interactive image gallery based off Avatar The Last Airbender. I used my knowledge of HTML , CSS  and jQuery. I was able to create a slideshow that would cycle through 6 photos of different Avatar based characters. I set a timer of 4 seconds to rotate through the photos.</p>
+            <a href = "https://rjohn05-dc.github.io/Interactive-Image-Gallery/">Avatar The Last Airbender</a>
+        </div>
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h2>Project 3</h2>
+            <p>Description of Project 3</p>
+        </div>
+    </div>
+
     
+    <script>
+        $(document).ready(function() {
+            $("h1").css("display", "none");
+
+            $("nav a").hover(function() {
+                $(this).css("color", "blue");
+            }, function() {
+                $(this).css("color", "black");
+            });
+
+            $("h1").show(4000, function() {
+                $(this).css("color", "black");
+            });
+            $("h1").fadeIn(4000, function() {
+                $(this).css("color", "black");
+            });
+        });
+    </script>
 </body>
 </html>
