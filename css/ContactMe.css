@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+
+}nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color:black;
+}
+
+.contact{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 20px;
+    
+
+
+
+}
