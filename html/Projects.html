@@ -46,6 +46,9 @@
         </div>
     </div>
 
+    <footer>
+        <p>&copy; 2023 Rohan John. All rights reserved.</p>
+    </footer>
     
     <script>
         $(document).ready(function() {
@@ -64,6 +67,39 @@
                 $(this).css("color", "black");
             });
         });
+
+        // Initially hide all project cards
+        $('.project').hide();
+
+        // Show each project with delay using fade-in effect
+        // This looks for anything with the class of project and hides it
+        // It then shows it by multiplying the index of the project by 500ms and so this goes through a loop for 0,1,2
+        // It then shows it with a fade in effect of 800ms
+        $('.project').each(function (index) {
+            $(this).delay(500 * index).show(800);
+        });
+
+        // Hover effect using jQuery
+        $('.project').hover(
+            function () {
+                $(this).css({
+                    'transform': 'scale(1.03)',
+                    'box-shadow': '0 8px 16px rgba(0, 0, 0, 0.2)',
+                    'background-color': '#ffffff'
+                });
+            },
+            function () {
+                $(this).css({
+                    'transform': 'scale(1)',
+                    'box-shadow': '0 4px 8px rgba(0, 0, 0, 0.1)',
+                    'background-color': '#f9f9f9'
+                });
+            }
+        );
+</script>
+
+
+        
     </script>
 </body>
 </html>

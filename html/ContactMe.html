@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/ContactMe.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
 <style>
@@ -39,6 +40,23 @@
     </form>
 </div>
    
+    <footer>
+        <p>&copy; 2023 Rohan John. All rights reserved.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $("h1").css("display", "none");
+
+            $("nav a").hover(function() {
+                $(this).css("color", "blue");
+            }, function() {
+                $(this).css("color", "black");
+            });
+
+            $("h1").show(4000);
+        });
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/Home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <style>
+
+        body {
+            background-image: url('/images/samuraiportfolio.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Rohan John</h1>
+
+    <nav>
+        <a href="/html/home.html">Home</a>
+        <a href="/html/AboutMe.html">About Me</a>
+        <a href="/html/Projects.html">Projects</a>
+        <a href="/html/ContactMe.html">Contact Me</a>
+    </nav>
+    <div class="img">
+        <img src="/images/pfp.jpg" alt="Profile Picture" width="300" height="200">
+    </div>
+    
+    <p>My name is Rohan John and I want to become a Web Designer I love to draw in my free time and I also like to watch anime.I am currently learning web development and I am excited to learn more about it</p>
+
+    <footer>
+        <p>&copy; 2023 Rohan John. All rights reserved.</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $("h1").css("display", "none");
+
+            $("nav a").hover(function() {
+                $(this).css("color", "blue");
+            }, function() {
+                $(this).css("color", "black");
+            });
+
+            $("h1").show(4000);
+        });
+    </script>
+    
+</body>
+</html>
