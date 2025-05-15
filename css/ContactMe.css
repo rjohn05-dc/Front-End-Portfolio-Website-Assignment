@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    
 
 }nav{
     display: flex;
@@ -13,33 +14,6 @@ nav a{
     color:black;
 }
 
-.contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    /* Center horizontally */
-    margin: 0 auto;
-
-    /* Box dimensions */
-    max-width: 300px;     /* increased for better usability */
-    height: auto;         /* flexible height based on content */
-    
-    /* Text alignment */
-    text-align: center;
-
-    /* Border styling */
-    border: 2px solid #000;
-    border-radius: 8px;   /* adds rounded corners */
-
-    /* Spacing inside the box */
-    padding: 20px;
-
-    /* Background and shadow for a modern look */
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 footer{
     text-align: center;
     margin-top: 20px;
@@ -49,4 +23,20 @@ footer{
     bottom: 0;
     left:0;
     right:0;
+}
+
+.contact{
+    width: 90%;             /* takes 90% of parent width */
+    max-width: 500px;       /* won't grow larger than 500px */
+    margin: 0 auto;         /* centers the box */
+    padding: 20px;          /* inner spacing */
+    border: 1px solid #ccc; /* light border */
+    border-radius: 8px;     /* rounded corners */
+    background-color: #f9f9f9; /* light background */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtle shadow */
+    display: flex;
+    flex-direction: column; /* stacks children vertically */
+    align-items: center;   /* centers children horizontally */
+    
+
 }
