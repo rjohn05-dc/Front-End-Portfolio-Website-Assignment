@@ -44,3 +44,17 @@ footer {
     right: 0;
     padding: 10px;
 }
+.toggle-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .toggle-btn:hover {
+            background-color: #005f73;
+        }
