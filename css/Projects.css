@@ -45,16 +45,26 @@ footer {
     padding: 10px;
 }
 .toggle-btn {
-            margin: 20px;
-            padding: 10px 20px;
-            background-color: #008CBA;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
 
         .toggle-btn:hover {
             background-color: #005f73;
         }
+
+@media screen and (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr; /* Stack items on small screens */
+    }
+    
+}
